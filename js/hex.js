@@ -5,7 +5,7 @@ const color = document.querySelector('.color')
 btn.addEventListener('click' , function(){
     let hexColor = '#'
     for(let i = 0 ; i < 6 ; i++){
-        hexColor += hex[getRanNumberArray()]
+        hexColor += hex[getRandomNumberArray()]
         console.log(hexColor);
     }
 
@@ -14,7 +14,7 @@ btn.addEventListener('click' , function(){
 })
 
 
-function getRanNumberArray(){
+function getRandomNumberArray(){
     return Math.floor(Math.random() * hex.length)
 }
 
